@@ -85,11 +85,24 @@ export default function App() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white py-4 text-center text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>DSA Practice Hub &copy; {new Date().getFullYear()}</span>
-          <span className="font-semibold text-blue-600">{questions.length} DSA Multiple Choice Questions Loaded</span>
+      {/* Footer with Creator Credits */}
+      <footer className="border-t border-slate-200 bg-white py-5 text-center text-xs text-slate-500 shadow-2xs">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="font-semibold text-slate-800">DSA Practice Hub &copy; {new Date().getFullYear()}</span>
+            <span className="text-slate-300">•</span>
+            <span>Created by <strong className="text-slate-900 font-bold">Sanjay</strong></span>
+          </div>
+
+          <div className="flex items-center space-x-3 text-slate-600 font-medium">
+            <a
+              href="mailto:sanch.builds@gmail.com"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors border border-blue-200 font-bold"
+            >
+              <span>✉️</span>
+              <span>sanch.builds@gmail.com</span>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
